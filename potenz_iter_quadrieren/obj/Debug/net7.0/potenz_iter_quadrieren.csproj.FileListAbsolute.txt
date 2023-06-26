@@ -1,0 +1,15 @@
+/Users/izzy/mein_labor/algos_ds/potenz_iter_quadrieren/bin/Debug/net7.0/potenz_iter_quadrieren
+/Users/izzy/mein_labor/algos_ds/potenz_iter_quadrieren/bin/Debug/net7.0/potenz_iter_quadrieren.deps.json
+/Users/izzy/mein_labor/algos_ds/potenz_iter_quadrieren/bin/Debug/net7.0/potenz_iter_quadrieren.runtimeconfig.json
+/Users/izzy/mein_labor/algos_ds/potenz_iter_quadrieren/bin/Debug/net7.0/potenz_iter_quadrieren.dll
+/Users/izzy/mein_labor/algos_ds/potenz_iter_quadrieren/bin/Debug/net7.0/potenz_iter_quadrieren.pdb
+/Users/izzy/mein_labor/algos_ds/potenz_iter_quadrieren/obj/Debug/net7.0/potenz_iter_quadrieren.csproj.AssemblyReference.cache
+/Users/izzy/mein_labor/algos_ds/potenz_iter_quadrieren/obj/Debug/net7.0/potenz_iter_quadrieren.GeneratedMSBuildEditorConfig.editorconfig
+/Users/izzy/mein_labor/algos_ds/potenz_iter_quadrieren/obj/Debug/net7.0/potenz_iter_quadrieren.AssemblyInfoInputs.cache
+/Users/izzy/mein_labor/algos_ds/potenz_iter_quadrieren/obj/Debug/net7.0/potenz_iter_quadrieren.AssemblyInfo.cs
+/Users/izzy/mein_labor/algos_ds/potenz_iter_quadrieren/obj/Debug/net7.0/potenz_iter_quadrieren.csproj.CoreCompileInputs.cache
+/Users/izzy/mein_labor/algos_ds/potenz_iter_quadrieren/obj/Debug/net7.0/potenz_iter_quadrieren.dll
+/Users/izzy/mein_labor/algos_ds/potenz_iter_quadrieren/obj/Debug/net7.0/refint/potenz_iter_quadrieren.dll
+/Users/izzy/mein_labor/algos_ds/potenz_iter_quadrieren/obj/Debug/net7.0/potenz_iter_quadrieren.pdb
+/Users/izzy/mein_labor/algos_ds/potenz_iter_quadrieren/obj/Debug/net7.0/potenz_iter_quadrieren.genruntimeconfig.cache
+/Users/izzy/mein_labor/algos_ds/potenz_iter_quadrieren/obj/Debug/net7.0/ref/potenz_iter_quadrieren.dll
