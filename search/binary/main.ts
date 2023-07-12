@@ -43,3 +43,5 @@ const recursiveBinarySearch = <T>(array: Array<T>, term: T, bottom: number, top:
 
 console.log(recursiveBinarySearch(testArray, term, 0, testArray.length -1) === correctIndex)
 console.log(recursiveBinarySearch(testFalsy, termFalsy, 0, testFalsy.length -1) === -1 )
+
+console.log("caution at calculating indices")
