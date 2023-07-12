@@ -29,3 +29,17 @@ const termFalsy = 9
 const resultFalsy = iterativeBinarySearch(testFalsy, termFalsy)
 
 console.log(resultFalsy === -1)
+
+const recursiveBinarySearch = <T>(array: Array<T>, term: T, bottom: number, top: number): number => {
+  if(bottom <= top && top >= bottom) {
+    const middle = Math.floor( ( bottom + top ) / 2 )
+    if(array[middle] === term) return middle
+    if(array[middle] > term) return recursiveBinarySearch(array, term, bottom, middle - 1) 
+    if(array[middle] < term) return recursiveBinarySearch(array, term, middle + 1, top)
+  }
+
+  return -1
+}
+
+console.log(recursiveBinarySearch(testArray, term, 0, testArray.length -1) === correctIndex)
+console.log(recursiveBinarySearch(testFalsy, termFalsy, 0, testFalsy.length -1) === -1 )
