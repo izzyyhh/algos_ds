@@ -1,15 +1,17 @@
 # Complexity
 ## Worst Case
-dividing problem always into to halfs thus, log2(n)
+like gauss, N + (N - 1) + (N-2) + (N-3), ...
 
-so ``` O(log(n)) ```
+gauss sum(ns) = (n + 1) * n/2
+
+so ``` O(n^2) ```
 
 ## Best Case
-when searched term is at the first computed middle index, thus constant
+allready sorted but without check still O(n^2) with check it's linear, as it needs to compare in linear way or bubble sort stops after first iteration
 
-``` O(1) ```
+``` O(n) ```
 
 ## Average Case
-doesn't differ much from worst case, just the count of how many times it needs to half the problem
+doesn't differ much from worst case
 
-``` O(log(n)) ```
+``` O(n^2) ```
