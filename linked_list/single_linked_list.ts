@@ -9,7 +9,7 @@ interface ISingleLinkedList<T> {
   length: number;
   append?: (value:T) => void;
   delete?: (node: ISingleLinkedListNode<T>) => void;
-  get?: (index: number) => ISingleLinkedListNode<T>;
+  get?: (index: number) => T | null;
 }
 
 
@@ -35,6 +35,25 @@ export class SingleLinkedList<T> implements ISingleLinkedList<T> {
      this.tail = newNode
    }
    this.length++
+ }
+
+ get(index: number) {
+   if(this.head && index <= this.length -1) {
+     let count = 0
+     if(index === 0) return this.head.value
+
+     let currentNode = this.head
+     while(currentNode.next) {
+    	currentNode = currentNode.next
+	count++
+	if(count === index) return currentNode.value
+     }
+
+     return null
+
+   } else {
+     return null
+   }
  }
 
 
