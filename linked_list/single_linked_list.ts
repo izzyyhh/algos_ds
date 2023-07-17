@@ -8,8 +8,10 @@ interface ISingleLinkedList<T> {
   tail?: ISingleLinkedListNode<T> | null;
   length: number;
   append?: (value:T) => void;
-  delete?: (node: ISingleLinkedListNode<T>) => void;
+  delete?: (index: number) => void;
   get?: (index: number) => T | null;
+  pop?: () => ISingleLinkedListNode<T> | null;
+  shift?: () => ISingleLinkedListNode<T> | null;
 }
 
 
@@ -57,6 +59,25 @@ export class SingleLinkedList<T> implements ISingleLinkedList<T> {
  }
 
 
+ pop() {
+   if(this.tail && this.head) {
+     const target = this.tail
+     let prevNode = this.head
+     let index = 0
+
+     while(index != this.length - 2 && prevNode.next) {
+         prevNode = prevNode.next
+	 index++
+     }
+
+     prevNode.next = null
+     this.tail = null
+
+     this.length -= 1
+     return target 
+   }
+   return null
+ }
 }
 
 
