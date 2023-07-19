@@ -78,6 +78,24 @@ export class SingleLinkedList<T> implements ISingleLinkedList<T> {
    }
    return null
  }
+
+ shift(){
+   if(this.head){
+     this.length = this.length - 1
+     const currentHead = this.head;
+     if(currentHead.next && currentHead.next != currentHead ) {
+	this.head = currentHead.next;
+	return currentHead
+     } else {
+	this.head = null
+	return currentHead
+     }
+   } else {
+	return null
+   }
+ }
+
+
 }
 
 
