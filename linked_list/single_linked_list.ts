@@ -7,6 +7,7 @@ interface ISingleLinkedList<T> {
   head?: ISingleLinkedListNode<T> | null;
   tail?: ISingleLinkedListNode<T> | null;
   length: number;
+  insert?: (value:T, index: number) => void;
   append?: (value:T) => void;
   delete?: (index: number) => void;
   get?: (index: number) => T | null;
@@ -38,6 +39,44 @@ export class SingleLinkedList<T> implements ISingleLinkedList<T> {
    }
    this.length++
  }
+ 
+ insert(value: T, index: number) {
+   if(index === this.length - 1 || this.length === 0) {
+     this.append(value)
+   } else if(index < this.length - 1 && index >0) {
+     const newNode: ISingleLinkedListNode<T>  = { value: value, next: null }
+     let prevNode: ISingleLinkedListNode<T> | null = null
+     let nextNode: ISingleLinkedListNode<T> | null = null
+     let targetNode: ISingleLinkedListNode<T> | null = null
+     let currentNode: ISingleLinkedListNode<T> | undefined | null = this.head 
+     let i = 0
+     
+     while(currentNode) {
+	if(i === index -1) {
+          prevNode = currentNode
+	} else if( i === index) {
+          targetNode = currentNode
+	} else if( i === index + 1) {
+	  nextNode = currentNode
+	  break;
+	}
+
+	currentNode = currentNode.next
+	i++
+     }
+
+     if(prevNode) prevNode.next = newNode
+     if(targetNode) newNode.next = targetNode 
+     this.length++
+   } else if (index === 0 && this.length >= 1) {
+     const newNode = {value: value, next: this.head}
+     this.head = newNode
+     this.length++
+   } else {
+	console.log("out of bounds")
+   }
+ }
+
 
  get(index: number) {
    if(this.head && index <= this.length -1) {
