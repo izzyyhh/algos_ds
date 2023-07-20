@@ -94,8 +94,47 @@ export class SingleLinkedList<T> implements ISingleLinkedList<T> {
 	return null
    }
  }
+ 
+ delete(index: number){
+   if(index === 0 ) {
+     this.shift()
+     return
+   }
 
+   if(index === this.length - 1) {
+     this.pop()
+     return
+   }
 
+   if(index < this.length && index > 0) {
+     let prevNode: ISingleLinkedListNode<T> | null = null
+     let nextNode: ISingleLinkedListNode<T> | null = null
+     let targetNode:ISingleLinkedListNode<T> | null = null
+     let currentNode: ISingleLinkedListNode<T> | undefined | null = this.head 
+     let i = 0
+     
+
+     while(i < this.length && i <= index + 1 && currentNode) {
+	if(i === index - 1) {
+          prevNode = currentNode
+	} else if(i === index) {
+          targetNode = currentNode
+	} else if(i === index + 1) {
+          nextNode = currentNode
+	}
+	i++
+	currentNode = currentNode.next
+     }
+
+     if(prevNode && nextNode) {
+	prevNode.next = nextNode
+     } else if(prevNode) {
+	prevNode.next = null
+     }
+     
+     this.length -= 1
+   }
+
+   return
+ }
 }
-
-
