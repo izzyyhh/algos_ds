@@ -47,6 +47,21 @@ list2.insert(11, 11) // prints out of bounds
 list2.insert(20, 1)
 
 console.log(list2.get(1) === 20)
-console.log(list2.get(0))
-console.log(list2.get(2))
-console.log(list2.get(3))
+for(let i = 0; i < list2.length; i++) {
+  console.log(list2.get(i))
+}
+
+list2.insert(9999, list2.length -1)
+
+console.log("after insertion at the end")
+for(let i = 0; i < list2.length; i++) {
+  console.log(list2.get(i))
+}
+
+list2.insert(5555, 3)
+
+console.log("after mid insert")
+
+for(let i = 0; i < list2.length; i++) {
+  console.log(list2.get(i))
+}
