@@ -33,6 +33,13 @@ my solution from end to beginning, one of the pointers will deplete
 and then just add the n-array to the beginning if mpointer depleted left
 
 improved solution below, just deplete n pointer, as m array is in front and sorted
+
+O(m+n) cuz worst case has to go through both arrays
+
+best case
+if n is 0 then constant time as already sorted
+
+if m is 0 then we have to write m times, C(m)
 """
 
 class Solution(object):
