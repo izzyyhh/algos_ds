@@ -35,7 +35,8 @@ class Solution:
 
 
 """
-soltuion with memory usage
+soltuion with memory usage,
+this problem is solved using write index, cuz it doesnt matter if overwrite duplicates as we want to remove them
 
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
