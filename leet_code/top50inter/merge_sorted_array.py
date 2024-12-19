@@ -62,4 +62,4 @@ class Solution(object):
                 nPointer -= 1
             slot -= 1
 
-        
+
