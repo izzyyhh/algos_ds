@@ -1,4 +1,6 @@
 """
+https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/?envType=study-plan-v2&envId=top-interview-150
+
 to remove duplicates from a sorted arr there's a trick with a 2 sized backwards window from current element
 we start moving from first element as always unique
 we keep a pointer to write in the array starting with: 1

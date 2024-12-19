@@ -29,6 +29,8 @@ class Solution(object):
         
 
 """
+https://leetcode.com/problems/merge-sorted-array/description/?envType=study-plan-v2&envId=top-interview-150
+
 my solution from end to beginning, one of the pointers will deplete
 and then just add the n-array to the beginning if mpointer depleted left
 
