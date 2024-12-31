@@ -1,4 +1,6 @@
 """
+https://leetcode.com/problems/search-insert-position/description/?envType=study-plan-v2&envId=top-interview-150
+
 we are given a sorted array and we search for a target return its index,
 if the target is not found
 return the the index where it would be inserted
